@@ -8,7 +8,7 @@ class DiariesController extends Controller
 {
     public function index()
     {
-        $diaries = diaries::all();
+        $diaries = Diaries::all();
         return view("diary.index", compact("diaries"));
     }
 } 
